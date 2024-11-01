@@ -1,5 +1,17 @@
+import os
+from dotenv import load_dotenv
+
+dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
+if os.path.exists(dotenv_path):
+	load_dotenv(dotenv_path)
+
 # Bot token issued by @botfather (Telegram)
-token = 'xxxxxxxx:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+token = os.environ.get('TELEGRAM_TOKEN')
+
+# The ID of the chat the bot should read. Messages from other chats will be ignored.
+# When the bot receives the /start command, it replies with the ID of the chat.
+my_chat_id = int(os.environ.get('MY_CHAT_ID'))
+
 
 # Path to the folder where new notes should be created
 # inbox_path = r'C:\your-obsidian-vault'
@@ -73,6 +85,3 @@ negative_keywords = {'негатив', 'печал'}
 # Tag to add to the text where a keyword is detected
 negative_tag = '#негатив'
 
-# The ID of the chat the bot should read. Messages from other chats will be ignored.
-# When the bot receives the /start command, it replies with the ID of the chat.
-my_chat_id = 123456789
