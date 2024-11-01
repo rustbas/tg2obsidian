@@ -3,8 +3,3 @@ datetime
 asyncio
 aiogram == 3.3.0
 bs4
-torch
-torchvision
-torchaudio
-openai_whisper
-pytesseract
