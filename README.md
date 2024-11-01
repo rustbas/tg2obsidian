@@ -41,10 +41,14 @@ pip install -r requirements.txt
 ```
 
 3. Create your bot using https://t.me/BotFather
-4. Insert the token received from `@botfather` into the corresponding variable in the `config.py` file and modify the other parameters in `config.py` as required.
-5. (Optional) Add the bot created above to a private Telegram group and make it an administrator so that it can read messages.
-6. Run the bot (see the "Usage" section)
-7. Send the `/start` command to your bot on Telegram. In response, the bot will tell you your id. Insert it into the `my_chat_id` parameter in the `config.py` file.
+4. Insert the token received from `@botfather` into the corresponding variable in the `.env` file and modify the other parameters in `config.py` as required.
+    ```
+    TELEGRAM_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    MY_CHAT_ID=xxxxxxxxxx
+    ```
+6. (Optional) Add the bot created above to a private Telegram group and make it an administrator so that it can read messages.
+7. Run the bot (see the "Usage" section)
+8. Send the `/start` command to your bot on Telegram. In response, the bot will tell you your id. Insert it into the `my_chat_id` parameter in the `config.py` file.
 
 ### If Text Recognition on Images is Required
 
