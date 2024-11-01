@@ -1,0 +1,14 @@
+---
+
+services:
+  tg2obsidian:
+    image: tg2obsidian
+    container_name: tg2obsidian
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    env_file: .env
+    restart: always
+    volumes:
+      - ./Notes:/app/Notes
+      - ./bot.log:/app/bot.log
