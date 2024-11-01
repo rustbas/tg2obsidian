@@ -15,11 +15,12 @@ my_chat_id = int(os.environ.get('MY_CHAT_ID'))
 
 # Path to the folder where new notes should be created
 # inbox_path = r'C:\your-obsidian-vault'
-inbox_path = r'/home/rustam/Downloads/tg2obs'
+# inbox_path = r'/home/rustam/Downloads/tg2obs'
+inbox_path = r'/app/Notes'
 
 # Path to the folder where received pictures should be stored
 # photo_path = r'C:\your-obsidian-vault\attachments'
-photo_path = r'/home/rustam/Downloads/tg2obs/assets'
+photo_path = r'/app/Notes/attachments'
 
 # If True, messages (including picture captions) will retain formatting (bold, italic, links, etc.)
 # If False, messages will be saved as plain text. This also removes inline links.
